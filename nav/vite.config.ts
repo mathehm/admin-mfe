@@ -14,9 +14,7 @@ export default defineConfig({
     federation({
       name: 'nav',
       remotes:{
-        'app1': 'http://localhost:8081/assets/remoteEntry.js',
-        'admin': 'http://localhost:3000/assets/remoteEntry.js',
-        // 'admin': 'https://admin-mfe.vercel.app/assets/remoteEntry.js'
+        'app1': 'https://admin-mfe-app1.vercel.app/assets/remoteEntry.js',
       },
       shared: ['vue', 'pinia']
     })

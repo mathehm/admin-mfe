@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/app1',
       name: 'app1',
       component: () => import('app1/Hello')
+    },
+    {
+      path: '/welcome',
+      name: 'welcome',
+      component: () => import('app1/Welcome')
     }
   ]
 })
